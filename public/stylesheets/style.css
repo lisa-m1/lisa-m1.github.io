@@ -1,0 +1,610 @@
+@import url('whitespace-reset.css');
+/* General */
+
+html {
+  font-size: 18px;
+  font-family: 'Montserrat', 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+#intro,
+#qmantis,
+#projects,
+#contact,
+.intro-p-1,
+.intro-p-2,
+#qmantis-title-container,
+#qmantis-info-container,
+.qmantis-manage-container {
+  opacity: 0;
+  animation: a .5s cubic-bezier(.64, .94, .23, 1.11);
+  animation-fill-mode: forwards;
+}
+
+
+.intro-p-1 {
+  animation-delay: .2s;
+}
+
+.intro-p-2 {
+  animation-delay: .4s;
+}
+
+#contact,
+#projects,
+#qmantis-title-container {
+  animation-delay: .6s;
+}
+
+#qmantis-info-container {
+  animation-delay: .8s;
+}
+
+.qmantis-manage-container {
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes a {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes a {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes a {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+*/ html {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Baloo Bhaijaan 2';
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+#resume-btn:hover {
+    color: #76B7A7;
+}
+
+header {
+    padding: 15px;
+    position: fixed;
+}
+
+.profile-name {
+    font-family: 'Baloo Bhaijaan 2';
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-weight: 900;
+}
+
+#intro>h4>img {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#contact h3 {
+    color: #000000;
+}
+
+#projects>ul {
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    margin-top: 75px;
+}
+
+#projects img {
+    width: 100%;
+}
+
+h4 {
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 35px;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h5 {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+a.qmantis {
+    color: #EE5942;
+}
+
+a {
+    color: #260C1A;
+    text-decoration: none;
+}
+
+li {
+    margin: 0 2%;
+    width: 25%;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #F6F1E7;
+    width: 15%;
+}
+
+footer {
+    background-color: #262626;
+    padding: 25px 0;
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.btn {
+    background: #76B7A7;
+    border-color: #76B7A7;
+    color: #F6F1E7;
+    box-shadow: 0 0 3px #76B7A7;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+.icon {
+    background-color: #76B7A7;
+    border: solid 1px #76B7A7;
+    border-radius: 100%;
+    margin: 2%;
+    min-width: 34px;
+    padding: 3px;
+    width: 100%;
+}
+
+/* .btn:hover, */
+.icon:hover {
+    background-color: #EE5942;
+    border-color: #EE5942;
+}
+
+.horz-center {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other-descript {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.other-projects {
+    border-radius: 5px;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+.vert-center {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo-links {
+    position: fixed;
+    z-index: 1;
+}
+
+
+#qmantis-title {
+  font-family: 'Baloo Bhaijaan 2';
+  font-size: 4rem;
+  color: #EE5942; 
+}
+
+.qmantis-logo {
+    height: 200px;
+}
+
+.qmantis-logo, #qmantis-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo {
+    margin: 25px;
+    opacity: 0.5;
+    position: fixed;
+    width: 60px;
+}
+
+/* ---------------------------------
+
+               intro
+
+------------------------------------ */
+
+#avatar {
+    display: block;
+    max-width: 250px;
+    min-width: 200px;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+#intro>p {
+    text-align: center;
+    width: 550px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 36px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ---------------------------------
+
+               #qmantis
+
+------------------------------------ */
+
+#qmantis {
+    background-color: #F6F1E7;
+    overflow: hidden;
+    justify-content: center;
+    padding-bottom: 0;
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#qmantis-info-container {
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#qmantis-info-container p {}
+
+#qmantis-title-container,
+#qmantis-video-container {
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#qmantis-logo {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+#qmantis h2 {
+    display: inline-block;
+}
+
+#qmantis-info-container,
+#qmantis-video-container {
+    margin-top: 75px;
+}
+
+#qmantis-info-container>div,
+#qmantis-video-container>div {
+    width: 50%;
+}
+
+#qmantis-info-container>div:first-of-type,
+#qmantis-video-container>div:first-of-type {
+    margin-right: 2.5%;
+}
+
+#qmantis-architecture {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.managing-apps {
+    max-width: 100%;
+}
+
+div>iframe {
+    max-width: 100%;
+}
+
+#qmantis-info-container>div:last-of-type,
+#qmantis-video-container>div:last-of-type {
+    margin-left: 2.5%;
+}
+
+#qmantis-video-container div:last-of-type>p {
+    width: 75%;
+}
+
+.qmantis-manage-container {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 50px;
+    border-top: 1px solid #eee;
+}
+
+.qmantis-manage-container a {
+    display: flex;
+    align-items: flex-end;
+}
+
+#qmantis-repo-btn {
+    margin-bottom: 30px;
+    width: 300px;
+    padding: 20px;
+    font-size: 1.1rem;
+
+}
+
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#resume-logo {
+    cursor: pointer;
+    width: 35px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+#github-logo {
+    cursor: pointer;
+    width: 35px;
+    position: fixed;
+    top: 55px;
+    left: 5px;
+}
+
+#linkedin-logo {
+    cursor: pointer;
+    width: 35px;
+    position: fixed;
+    top: 105px;
+    left: 5px;
+}
+
+#contact {
+    padding-top: 50px;
+    background: #F6F1E7;
+}
+
+#contact h3 {
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    width: 20%;
+}
+
+#contact li {
+    margin: 6%;
+}
+
+/* ---------------------------------
+
+           media queries
+
+------------------------------------ */
+
+@media(max-width: 1100px) {
+    h4 {
+        font-size: 1.1rem;
+    }
+    #logo {
+        margin: 20px;
+        width: 55px;
+    }
+    #projects p {
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media(max-width: 920px) {
+    section {
+        padding: 100px 15%;
+    }
+    li {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    li:last-of-type {
+        margin-bottom: 0;
+    }
+    #projects p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+    #projects>ul {
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+        width: 75%;
+    }
+    #logo {
+        width: 50px;
+    }
+    #qmantis-info-container,
+    #qmantis-video-container {
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #qmantis-info-container>div:first-of-type,
+    #qmantis-video-container>div:first-of-type {
+        margin-right: 0;
+    }
+    #qmantis-info-container>div:last-of-type,
+    #qmantis-video-container>div:last-of-type {
+        margin-left: 0;
+    }
+    #qmantis-info-container>div,
+    #qmantis-video-container>div {
+        width: 90%;
+    }
+    #deploy-command-gif,
+    div>iframe {
+        margin-bottom: 50px;
+    }
+    #contact ul {
+        width: 30%;
+    }
+    #contact li {
+        margin: 8%;
+    }
+}
+
+@media(max-width: 690px) {
+    #qmantis-logo {
+        margin-bottom: 25px;
+        width: 75px;
+    }
+    #qmantis-title-container {
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #qmantis-logo {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 570px) {
+    #intro>p {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.7rem;
+        width: 80vw;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    section {
+        padding: 65px 15%;
+    }
+    #qmantis-info-container {
+        margin-top: 25px;
+    }
+    #qmantis-repo-btn {
+        align-self: center;
+    }
+    #projects>ul {
+        width: 100%;
+    }
+}
+
+@media(max-width: 465px) {
+    #qmantis-info-container>div {
+        width: 100%;
+    }
+    #qmantis-logo {
+        width: 60px;
+    }
+    #contact li {
+        margin: 15%;
+    }
+    #projects>ul {
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+  html {
+      font-size: 16px;
+  }
+  h1 {
+      font-size: 2.5rem;
+  }
+  h2 {
+      font-size: 1.7rem;
+  }
+  h3 {
+      font-size: 1.2rem;
+  }
+  #qmantis-repo-btn {
+      width: 180px;
+  }
+  #projects>ul {
+      margin-top: 50px;
+  }
+  #projects li {
+      margin-bottom: 50px;
+  }
+  #projects li:last-of-type {
+      margin-bottom: 0;
+  }
+}
+
+.project-tech {
+  margin-top: 1em;
+  color: #76B7A7;
+  font-weight: bold;
+  word-spacing: 5px;
+  text-align: center;
+}
