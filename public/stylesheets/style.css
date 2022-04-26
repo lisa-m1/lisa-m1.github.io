@@ -258,14 +258,6 @@ footer {
     width: auto;
 }
 
-#qmantis-logo {
-    display: inline-block;
-    width: 100%;
-    max-width: 500px;
-    min-width: 200px;
-}
-
-
 #logo {
     margin: 25px;
     opacity: 0.5;
@@ -494,6 +486,10 @@ div>iframe {
     .qmantis-text {
         margin-top: 40px;
     }
+    .qmantis-logo {
+        height: 125px;
+        width: auto;
+    }
 }
 
 @media(max-width: 690px) {
@@ -502,6 +498,10 @@ div>iframe {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+    }
+    .qmantis-logo {
+        height: 100px;
+        width: auto;
     }
 }
 
@@ -527,10 +527,6 @@ div>iframe {
     }
     #projects>ul {
         width: 100%;
-    }
-    .qmantis-logo {
-        height: 100px;
-        width: auto;
     }
 }
 
