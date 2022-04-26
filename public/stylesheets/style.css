@@ -313,11 +313,11 @@ footer {
 #qmantis-info-container {
     margin-bottom: 50px;
     align-items: center;
+    margin-top: 75px;
 }
 
 
-#qmantis-title-container,
-#qmantis-video-container {
+#qmantis-title-container {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
@@ -327,18 +327,12 @@ footer {
     display: inline-block;
 }
 
-#qmantis-info-container,
-#qmantis-video-container {
-    margin-top: 75px;
-}
 
-#qmantis-info-container>div,
-#qmantis-video-container>div {
+#qmantis-info-container>div {
     width: 50%;
 }
 
-#qmantis-info-container>div:first-of-type,
-#qmantis-video-container>div:first-of-type {
+#qmantis-info-container>div:first-of-type {
     margin-right: 2.5%;
 }
 
@@ -356,13 +350,8 @@ div>iframe {
     max-width: 100%;
 }
 
-#qmantis-info-container>div:last-of-type,
-#qmantis-video-container>div:last-of-type {
+#qmantis-info-container>div:last-of-type {
     margin-left: 2.5%;
-}
-
-#qmantis-video-container div:last-of-type>p {
-    width: 75%;
 }
 
 .qmantis-manage-container {
@@ -477,23 +466,19 @@ div>iframe {
     #logo {
         width: 50px;
     }
-    #qmantis-info-container,
-    #qmantis-video-container {
+    #qmantis-info-container {
         -ms-align-items: center;
         align-items: center;
         flex-direction: column;
         margin-top: 50px;
     }
-    #qmantis-info-container>div:first-of-type,
-    #qmantis-video-container>div:first-of-type {
+    #qmantis-info-container>div:first-of-type {
         margin-right: 0;
     }
-    #qmantis-info-container>div:last-of-type,
-    #qmantis-video-container>div:last-of-type {
+    #qmantis-info-container>div:last-of-type {
         margin-left: 0;
     }
-    #qmantis-info-container>div,
-    #qmantis-video-container>div {
+    #qmantis-info-container>div {
         width: 90%;
     }
     #deploy-command-gif,
@@ -556,10 +541,6 @@ div>iframe {
     #projects>ul {
         width: 100%;
     }
-    .qmantis-logo {
-        height: 100px;
-        width: auto;
-      }
 }
 
 @media(max-width: 400px) {
@@ -586,10 +567,6 @@ div>iframe {
     }
     #projects li:last-of-type {
         margin-bottom: 0;
-    }
-    .qmantis-logo {
-        height: 100px;
-        width: auto;
     }
 }
 
