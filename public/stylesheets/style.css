@@ -253,21 +253,18 @@ footer {
     z-index: 1;
 }
 
-
-#qmantis-title {
-  font-family: 'Baloo Bhaijaan 2';
-  font-size: 4rem;
-  color: #EE5942; 
-}
-
 .qmantis-logo {
-    height: 200px;
+    height: 150px;
+    width: auto;
 }
 
-.qmantis-logo, #qmantis-title {
+#qmantis-logo {
     display: inline-block;
-    vertical-align: middle;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
 }
+
 
 #logo {
     margin: 25px;
@@ -318,20 +315,12 @@ footer {
     align-items: center;
 }
 
-#qmantis-info-container p {}
 
 #qmantis-title-container,
 #qmantis-video-container {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-}
-
-#qmantis-logo {
-    display: inline-block;
-    width: 100%;
-    max-width: 500px;
-    min-width: 200px;
 }
 
 #qmantis h2 {
@@ -520,17 +509,11 @@ div>iframe {
 }
 
 @media(max-width: 690px) {
-    #qmantis-logo {
-        margin-bottom: 25px;
-        width: 75px;
-    }
     #qmantis-title-container {
         -ms-align-items: center;
         align-items: center;
         flex-direction: column;
-    }
-    #qmantis-logo {
-        margin-right: 0;
+        justify-content: center;
     }
 }
 
@@ -557,14 +540,15 @@ div>iframe {
     #projects>ul {
         width: 100%;
     }
+    .qmantis-logo {
+        height: 100px;
+        width: auto;
+    }
 }
 
 @media(max-width: 465px) {
     #qmantis-info-container>div {
         width: 100%;
-    }
-    #qmantis-logo {
-        width: 60px;
     }
     #contact li {
         margin: 15%;
@@ -572,39 +556,47 @@ div>iframe {
     #projects>ul {
         width: 100%;
     }
+    .qmantis-logo {
+        height: 100px;
+        width: auto;
+      }
 }
 
 @media(max-width: 400px) {
-  html {
-      font-size: 16px;
-  }
-  h1 {
-      font-size: 2.5rem;
-  }
-  h2 {
-      font-size: 1.7rem;
-  }
-  h3 {
-      font-size: 1.2rem;
-  }
-  #qmantis-repo-btn {
-      width: 180px;
-  }
-  #projects>ul {
-      margin-top: 50px;
-  }
-  #projects li {
-      margin-bottom: 50px;
-  }
-  #projects li:last-of-type {
-      margin-bottom: 0;
-  }
+    html {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    #qmantis-repo-btn {
+        width: 180px;
+    }
+    #projects>ul {
+        margin-top: 50px;
+    }
+    #projects li {
+        margin-bottom: 50px;
+    }
+    #projects li:last-of-type {
+        margin-bottom: 0;
+    }
+    .qmantis-logo {
+        height: 100px;
+        width: auto;
+    }
 }
 
 .project-tech {
-  margin-top: 1em;
-  color: #76B7A7;
-  font-weight: bold;
-  word-spacing: 5px;
-  text-align: center;
+    margin-top: 1em;
+    color: #76B7A7;
+    font-weight: bold;
+    word-spacing: 5px;
+    text-align: center;
 }
