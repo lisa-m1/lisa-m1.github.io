@@ -16,6 +16,7 @@ body {
 #contact,
 .intro-p-1,
 .intro-p-2,
+.intro-p-3,
 #qmantis-title-container,
 #qmantis-info-container,
 .qmantis-manage-container {
@@ -33,10 +34,14 @@ body {
   animation-delay: .4s;
 }
 
+.intro-p-2 {
+    animation-delay: .6s;
+}
+
 #contact,
 #projects,
 #qmantis-title-container {
-  animation-delay: .6s;
+  animation-delay: .8s;
 }
 
 #qmantis-info-container {
