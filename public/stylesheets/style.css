@@ -101,7 +101,7 @@ h3 {
     margin: 25px 0;
 }
 
-#resume-btn:hover {
+#resume-btn:hover, .qmantis:hover {
     color: #76B7A7;
 }
 
