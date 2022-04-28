@@ -209,6 +209,10 @@ footer {
     text-align: center;
 }
 
+#qmantis-repo-btn:hover {
+    background: #EE6F57;
+}
+
 .icon {
     background-color: #76B7A7;
     border: solid 1px #76B7A7;
@@ -256,6 +260,10 @@ footer {
 .qmantis-logo {
     height: 150px;
     width: auto;
+}
+
+.qmantis-logo:hover {
+    opacity: 0.8;
 }
 
 #logo {
