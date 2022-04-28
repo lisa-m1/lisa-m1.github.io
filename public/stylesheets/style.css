@@ -34,7 +34,7 @@ body {
   animation-delay: .4s;
 }
 
-.intro-p-2 {
+.intro-p-3 {
     animation-delay: .6s;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 #qmantis-info-container {
-  animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 .qmantis-manage-container {
